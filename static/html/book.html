@@ -1,0 +1,36 @@
+<div ng-hide="bookEdit" ng-click="bookEdit=true">
+    <label>Name:<input value="{{ book.name }}"/></label>
+    <label>Description:<input value="{{ book.description }}"/></label>
+    <label>ISBN:<input value="{{ book.isbn }}"/></label>
+    <label>Year:<input value="{{ book.year }}"/></label>
+    <label>Authors:</label>
+    <ul ng-repeat="aut in book.authors">
+        <li class="list-group-item">
+            <label>Name:<input value="{{aut.name}}"/></label>
+            <label>DNI:<input value="{{aut.dni}}"/></label>
+            <label>Email:<input value="{{aut.email}}"/></label>
+            <label>Phone:<input value="{{aut.phone}}"/></label>
+        </li>
+    </ul>
+</div>
+
+<div ng-show="bookEdit" ng-model-options="modelOptions">
+    <label>Name:<input type="text" ng-model="book.name" ng-change="update()"/></label>
+    <label>Description:<input type="text" ng-model="book.description" ng-change="update()"/></label>
+    <label>ISBN:<input type="text" ng-model="book.isbn" ng-change="update()"/></label>
+    <label>Year:<input type="text" ng-model="book.year" ng-change="update()"/></label>
+
+        <isteven-multi-select
+            input-model="book.authors"
+            output-model="updateBookAuthors"
+            item-label="name"
+            button-label="name"
+            tick-property="ticked"
+
+        >
+
+        </isteven-multi-select>
+
+    <button ng-click="bookEdit=false; update()">Close</button>
+    <button ng-click="delete()">Delete Book</button>
+</div>

@@ -1,0 +1,42 @@
+.body-container{
+    background-color: cadetblue;
+}
+
+.auth{
+    text-align: center;
+    color: #1f2cc2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form{
+    /*text-align: center;*/
+    color: #1f2cc2;
+    /*border: 1px solid #000000;*/
+    /*border-radius: 6px;*/
+    /*width: auto;*/
+}
+.form label{
+    display: block;
+    /*width: 50px;*/
+    color: #1f2cc2;
+}
+.form input{
+    display: block;
+    /*display: block;*/
+    /*width: 200px;*/
+}
+
+.form button{
+    display:block;
+    margin: 10px auto;
+    /*margin-top: 10px;*/
+}
+
+.form h3{
+    text-align: center;
+}
+
+.form li p{
+    color: #1f2cc2;
+}

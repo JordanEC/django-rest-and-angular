@@ -1,0 +1,15 @@
+<div ng-hide="authorEdit" ng-click="authorEdit=true">
+    <label>Name:<input value="{{ author.name }}"/></label>
+    <label>DNI:<input value="{{ author.dni }}"/></label>
+    <label>Email:<input value="{{ author.email }}"/></label>
+    <label>Phone:<input value="{{ author.phone }}"/></label>
+</div>
+
+<div ng-show="authorEdit" ng-model-options="modelOptions">
+    <label>Name:<input type="text" ng-model="author.name" ng-change="update()"/></label>
+    <label>DNI:<input type="text" ng-model="author.dni" ng-change="update()"/></label>
+    <label>Email:<input type="text" ng-model="author.email" ng-change="update()"/></label>
+    <label>Phone:<input type="text" ng-model="author.phone" ng-change="update()"/></label>
+    <button ng-click="authorEdit=false">Close</button>
+    <button ng-click="delete()">Delete Author</button>
+</div>
