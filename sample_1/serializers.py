@@ -2,13 +2,6 @@ from django.contrib.auth.models import User
 from rest_framework import serializers, permissions
 from .models import *
 
-"""
-class UserSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = User
-        fields = ('url', 'username', 'email', 'is_staff')
-"""
-
 
 class AuthorSerializer(serializers.ModelSerializer):
     class Meta:

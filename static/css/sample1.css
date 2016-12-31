@@ -1,42 +1,62 @@
-.body-container{
+.container-fluid{
     background-color: cadetblue;
 }
 
 .auth{
     text-align: center;
-    color: #1f2cc2;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.form{
-    /*text-align: center;*/
-    color: #1f2cc2;
-    /*border: 1px solid #000000;*/
-    /*border-radius: 6px;*/
-    /*width: auto;*/
+/* unvisited link */
+.auth a:link {
+    color: red;
 }
+
+/* visited link */
+.auth a:visited {
+    color: black;
+}
+
+/* mouse over link */
+.auth a:hover {
+    color: white;
+}
+
+
+.form{
+    /*color: white;*/
+    background-color: #02627b;
+}
+.container-fluid .panel{
+    background-color: #02627b;
+}
+.container-fluid .list-group .list-group-item{
+    background-color: #02627b;
+}
+
 .form label{
     display: block;
-    /*width: 50px;*/
-    color: #1f2cc2;
+    color: white;
 }
+
+.form isteven-multi-select label{
+    color: black;
+}
+
+
 .form input{
+    color: black;
     display: block;
-    /*display: block;*/
-    /*width: 200px;*/
 }
 
 .form button{
     display:block;
     margin: 10px auto;
-    /*margin-top: 10px;*/
 }
 
 .form h3{
-    text-align: center;
-}
+    color: white;
 
-.form li p{
-    color: #1f2cc2;
+    text-align: center;
 }

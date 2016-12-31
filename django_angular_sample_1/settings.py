@@ -134,10 +134,9 @@ STATICFILES_FINDERS = (
     'djangobower.finders.BowerFinder',
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    #'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')#'/PROJECT_ROOT/components/'
+BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
 BOWER_PATH = '/usr/bin/bower'
 BOWER_INSTALLED_APPS = (
     'angular-bootstrap-multiselect'
