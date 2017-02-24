@@ -23,9 +23,21 @@
     color: white;
 }
 
+.login{
+    width: 300px;
+}
+.login a{
+    color: black;
+}
+
+.login .buttons{
+    text-align: center;
+}
+
 
 .form{
     /*color: white;*/
+    margin: 5px 0;
     background-color: #02627b;
 }
 .container-fluid .panel{

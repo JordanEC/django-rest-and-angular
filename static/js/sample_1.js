@@ -21,8 +21,8 @@
         function sample_1_Controller($scope, $http) {
             $scope.login = function () {
                 $http.post('/auth_sample_1/login/',
-                    {username: 'admin', password: 'adm1n1strad0r'}
-                );
+                    {username: $scope.user.username, password: $scope.user.password}
+                )
             };
 
             $scope.authors = [];
